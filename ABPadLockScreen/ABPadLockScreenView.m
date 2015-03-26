@@ -201,16 +201,16 @@
 - (void)updateDetailLabelWithString:(NSString *)string animated:(BOOL)animated completion:(void (^)(BOOL finished))completion
 {
     CGFloat length = (animated) ? animationLength : 0.0;
-    CGFloat labelWidth = 15; // padding
-  if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
-		labelWidth += [string sizeWithAttributes:@{NSFontAttributeName:self.detailLabelFont}].width;
-  }
-  else {
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
-		labelWidth += [string sizeWithFont: self.detailLabelFont].width;
-#pragma GCC diagnostic pop
-  }
+//    CGFloat labelWidth = 15; // padding
+//  if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
+//		labelWidth += [string sizeWithAttributes:@{NSFontAttributeName:self.detailLabelFont}].width;
+//  }
+//  else {
+//#pragma GCC diagnostic push
+//#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+//		labelWidth += [string sizeWithFont: self.detailLabelFont].width;
+//#pragma GCC diagnostic pop
+//  }
 
     CATransition *animation = [CATransition animation];
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
