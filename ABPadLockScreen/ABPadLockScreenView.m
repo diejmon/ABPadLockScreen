@@ -25,7 +25,7 @@
 #import "ABPinSelectionView.h"
 
 #define animationLength 0.15
-#define IS_IPHONE5 ([UIScreen mainScreen].bounds.size.height==568)
+#define IS_IPHONE5 (fabs([UIScreen mainScreen].bounds.size.height-568) < FLT_EPSILON)
 
 @interface ABPadLockScreenView()
 
