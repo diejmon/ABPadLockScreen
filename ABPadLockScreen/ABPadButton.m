@@ -57,7 +57,7 @@
         });
         _lettersLabel = ({
             UILabel *label = [self standardLabel];
-            label.attributedText = [[NSAttributedString alloc] initWithString:letters ? letters : @"" attributes:@{NSFontAttributeName: _letterLabelFont, NSKernAttributeName: @2}];
+            label.attributedText = [[NSAttributedString alloc] initWithString:letters ?: @"" attributes:@{NSFontAttributeName: _letterLabelFont, NSKernAttributeName: @2}];
             label;
         });
         
