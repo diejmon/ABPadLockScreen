@@ -24,6 +24,7 @@
  A pin button designed to look like a telephone number button displaying the number, letters and handling it's
  own animation
  */
+@import UIKit;
 @interface ABPadButton : UIButton
 
 - (instancetype)initWithFrame:(CGRect)frame number:(NSInteger)number letters:(NSString *)letters;

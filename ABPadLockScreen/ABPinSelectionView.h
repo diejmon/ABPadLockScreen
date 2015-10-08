@@ -23,6 +23,7 @@
 /**
  A simple view that indicates if a pin has been selected or not.
  */
+@import UIKit;
 @interface ABPinSelectionView : UIView
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated completion:(void (^)(BOOL finished))completion;

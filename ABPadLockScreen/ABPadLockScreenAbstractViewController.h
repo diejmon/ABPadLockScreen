@@ -24,6 +24,7 @@
  Abstract Class that encapsulates common functionality between the lock and setup screen. It is not designed to be used directly
  */
 
+@import UIKit;
 @protocol ABPadLockScreenDelegate;
 @class ABPadLockScreenView;
 

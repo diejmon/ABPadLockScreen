@@ -21,6 +21,7 @@
 // THE SOFTWARE.
 
 @class ABPinSelectionView;
+@import UIKit;
 
 @interface ABPadLockScreenView : UIView
 
