@@ -69,7 +69,7 @@
 - (void)showDeleteButtonAnimated:(BOOL)animated completion:(void (^)(BOOL finished))completion;
 - (void)showOKButton:(BOOL)show animated:(BOOL)animated completion:(void (^)(BOOL finished))completion;
 
-- (void)updateDetailLabelWithString:(NSString *)string animated:(BOOL)animated completion:(void (^)(BOOL finished))completion;
+- (void)updateDetailLabelWithString:(NSString *)string animated:(BOOL)animated;
 
 - (void)lockViewAnimated:(BOOL)animated completion:(void (^)(BOOL finished))completion;
 

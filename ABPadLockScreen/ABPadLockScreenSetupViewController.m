@@ -81,7 +81,7 @@
 {
     self.enteredPin = self.currentPin;
     self.currentPin = @"";
-    [lockScreenView updateDetailLabelWithString:NSLocalizedString(@"Re-enter your new pincode", nil) animated:YES completion:nil];
+    [lockScreenView updateDetailLabelWithString:NSLocalizedString(@"Re-enter your new pincode", nil) animated:YES];
     [lockScreenView resetAnimated:YES];
 }
          
@@ -96,7 +96,7 @@
     }
     else
     {
-        [lockScreenView updateDetailLabelWithString:NSLocalizedString(@"Pincode did not match.", nil) animated:YES completion:nil];
+        [lockScreenView updateDetailLabelWithString:NSLocalizedString(@"Pincode did not match.", nil) animated:YES];
 		[lockScreenView animateFailureNotification];
         [lockScreenView resetAnimated:YES];
         self.enteredPin = nil;

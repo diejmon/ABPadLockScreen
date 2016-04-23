@@ -197,7 +197,7 @@
     [self newPinSelected:tag];
 }
 
-- (void)cancelButtonSelected:(UIButton *)sender
+- (void)cancelButtonSelected:(__unused UIButton *)sender
 {
     if ([self.delegate respondsToSelector:@selector(unlockWasCancelledForPadLockScreenViewController:)])
     {
@@ -205,12 +205,12 @@
     }
 }
 
-- (void)deleteButtonSelected:(UIButton *)sender
+- (void)deleteButtonSelected:(__unused UIButton *)sender
 {
     [self deleteFromPin];
 }
 
-- (void)okButtonSelected:(UIButton *)sender
+- (void)okButtonSelected:(__unused UIButton *)sender
 {
 	[self processPin];
 }

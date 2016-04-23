@@ -198,7 +198,8 @@
     } animated:animated completion:completion];
 }
 
-- (void)updateDetailLabelWithString:(NSString *)string animated:(BOOL)animated completion:(void (^)(BOOL finished))completion
+- (void)updateDetailLabelWithString:(NSString *)string
+                           animated:(BOOL)animated
 {
     CGFloat length = (animated) ? animationLength : 0.0;
 //    CGFloat labelWidth = 15; // padding
@@ -263,7 +264,7 @@
 				view.layer.affineTransform = transform;
 			}
 		}
-	} completion:^(BOOL finished) {
+	} completion:^(__unused BOOL finished) {
 		if(fabs(direction) < 1) {
 			if(self.isComplexPin)
 			{
