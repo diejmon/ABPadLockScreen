@@ -96,7 +96,7 @@
 #pragma mark - Appearnce Methods
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated completion:(void (^)(BOOL finished))completion
 {
-    CGFloat length = (animated) ? animationLength : 0.0f;
+    NSTimeInterval length = (animated) ? animationLength : 0.0f;
     CGFloat alpha = (selected) ? 1.0f : 0.0f;
     
     [UIView animateWithDuration:length delay:0.0f options:UIViewAnimationOptionCurveEaseIn

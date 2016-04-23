@@ -24,7 +24,7 @@
 #import "ABPadButton.h"
 #import "ABPinSelectionView.h"
 
-#define animationLength 0.15
+#define animationLength 0.15f
 #define IS_IPHONE5 (fabs([UIScreen mainScreen].bounds.size.height-568) < FLT_EPSILON)
 
 @interface ABPadLockScreenView()
@@ -220,7 +220,7 @@
     
     self.detailLabel.text = string;
 
-	CGFloat pinSelectionTop = self.enterPasscodeLabel.frame.origin.y + self.enterPasscodeLabel.frame.size.height + 17.5;
+	CGFloat pinSelectionTop = self.enterPasscodeLabel.frame.origin.y + self.enterPasscodeLabel.frame.size.height + 17.5f;
 	
     self.detailLabel.frame = CGRectMake(([self correctWidth]/2) - 100, pinSelectionTop + 30, 200, 23);
 }
@@ -354,7 +354,7 @@
     self.enterPasscodeLabel.frame = CGRectMake(([self correctWidth]/2) - 100, top, 200, 23);
     [self.contentView addSubview:self.enterPasscodeLabel];
 	
-	CGFloat pinSelectionTop = self.enterPasscodeLabel.frame.origin.y + self.enterPasscodeLabel.frame.size.height + 17.5;
+	CGFloat pinSelectionTop = self.enterPasscodeLabel.frame.origin.y + self.enterPasscodeLabel.frame.size.height + 17.5f;
 
 	if(self.isComplexPin)
 	{
@@ -391,7 +391,7 @@
     
     CGFloat buttonRowWidth = (ABPadButtonWidth * 3) + (horizontalButtonPadding * 2);
     
-    CGFloat lefButtonLeft = ([self correctWidth]/2) - (buttonRowWidth/2) + 0.5;
+    CGFloat lefButtonLeft = ([self correctWidth]/2) - (buttonRowWidth/2) + 0.5f;
     CGFloat centerButtonLeft = lefButtonLeft + ABPadButtonWidth + horizontalButtonPadding;
     CGFloat rightButtonLeft = centerButtonLeft + ABPadButtonWidth + horizontalButtonPadding;
     
@@ -488,7 +488,7 @@
     CGRect newFrame = CGRectMake(roundedView.frame.origin.x, roundedView.frame.origin.y, newSize, newSize);
     roundedView.frame = newFrame;
     roundedView.clipsToBounds = YES;
-    roundedView.layer.cornerRadius = newSize / 2.0;
+    roundedView.layer.cornerRadius = newSize / 2.0f;
 }
 
 @end
