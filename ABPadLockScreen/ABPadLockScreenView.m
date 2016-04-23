@@ -484,7 +484,7 @@
     return label;
 }
 
-- (void)setRoundedView:(UIView *)roundedView toDiameter:(CGFloat)newSize;
+- (void)setRoundedView:(UIView *)roundedView toDiameter:(CGFloat)newSize
 {
     CGRect newFrame = CGRectMake(roundedView.frame.origin.x, roundedView.frame.origin.y, newSize, newSize);
     roundedView.frame = newFrame;

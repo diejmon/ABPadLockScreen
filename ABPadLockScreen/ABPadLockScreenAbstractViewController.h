@@ -35,7 +35,7 @@
 
 @property (nonatomic, strong) NSString *currentPin;
 @property (nonatomic, weak) id<ABPadLockScreenDelegate> delegate;
-@property (readonly, getter = isComplexPin) BOOL complexPin;
+@property (atomic, readonly, getter = isComplexPin) BOOL complexPin;
 
 - (id)initWithComplexPin:(BOOL)complexPin;
 
