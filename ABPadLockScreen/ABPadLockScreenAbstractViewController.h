@@ -29,9 +29,6 @@
 @class ABPadLockScreenView;
 
 @interface ABPadLockScreenAbstractViewController : UIViewController
-{
-	ABPadLockScreenView* lockScreenView;
-}
 
 @property (nonatomic, strong) NSString *currentPin;
 @property (nonatomic, weak) id<ABPadLockScreenDelegate> delegate;

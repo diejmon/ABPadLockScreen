@@ -27,6 +27,7 @@
 #define lockScreenView ((ABPadLockScreenView *) [self view])
 
 @interface ABPadLockScreenAbstractViewController ()
+//  @property (nonatomic, strong) ABPadLockScreenView *lockScreenView;// ABPadLockScreenView * lockScreenView;
 
 - (void)setUpButtonMapping;
 - (void)buttonSelected:(UIButton *)sender;
