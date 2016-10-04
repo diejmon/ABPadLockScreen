@@ -66,11 +66,6 @@
  */
 - (void)unlockWasUnsuccessful:(NSString *)falsePin afterAttemptNumber:(NSInteger)attemptNumber padLockScreenViewController:(ABPadLockScreenViewController *)padLockScreenViewController;
 
-/**
- Called when the user cancels the unlock
- */
-- (void)unlockWasCancelledForPadLockScreenViewController:(ABPadLockScreenViewController *)padLockScreenViewController;
-
 @optional
 /**
  Called when the user has expired their attempts
